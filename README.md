@@ -1,12 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <title>Alfies Project Website</title>
     <link rel="stylesheet" href="style_sheet.css">
 </head>
-
 <body>
     <header>
         <h1>
@@ -75,6 +73,5 @@
             observer.observe(section);
         });
     </script>
-
 </body>
 </html>
