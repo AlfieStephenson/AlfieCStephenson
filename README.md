@@ -1,1 +1,80 @@
-# AlfieCStephenson
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Alfies Project Website</title>
+    <link rel="stylesheet" href="style_sheet.css">
+</head>
+
+<body>
+    <header>
+        <h1>
+            This will become a project dump during my tenure at Leeds Beckett University!
+        </h1>
+    </header>
+    <ul class="navigation">
+        <li><a href='list_page.html'>Go to Second Page</a></li>
+        <li><a href="#">Hello</a></li>
+        <li><a href="#">World!</a></li>
+    </ul>
+    <p style="text-align:center; max-width:800px; margin:40px auto;">
+        So, the plan is to create a website from scratch and add a project every few weeks that im working on to said website.
+        Its basically just a repo but I just want to play around with a website.
+    </p>
+    <table class="list">
+        <tr>
+            <td>put projects here</td>
+            <td>Arranged like this</td>
+            <td>then itll look good!</td>
+        </tr>
+        <tr>
+            <td>Place</td>
+            <td>Holders</td>
+            <td>Here</td>
+        </tr>
+    </table>  
+    <div class="fade-section">
+        <div class = "section-header">
+            <h2>Project 1</h2>
+            <button class="section-btn">Click Me!</button>
+        </div>
+        <a href="#">
+            <img src="https://picsum.photos/800/400?random">
+        </a>
+    </div>
+    <div class="fade-section">
+        <div class = "section-header">
+            <h2>Project 2</h2>
+            <button class="section-btn">Click Me!</button>
+        </div>
+        <a href="#">
+            <img src="https://picsum.photos/800/400?random">
+        </a>
+    </div>
+    <div class="fade-section">
+        <div class="section-header">
+            <h2>Project 3</h2>
+            <button class="section-btn">Click Me!</button>
+        </div>
+        <a href="#">
+            <img src="https://picsum.photos/800/400?random">
+        </a>
+    </div>
+    <!-- fade in stuff, DO NOT TOUCH -->
+    <script>
+        const sections = document.querySelectorAll('.fade-section');
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, { threshold: 0.2 });
+        sections.forEach(section => {
+            observer.observe(section);
+        });
+    </script>
+
+</body>
+</html>
