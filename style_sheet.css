@@ -1,19 +1,16 @@
-/* GLOBAL */
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background: #0f172a;
+    background: #892D5E;
     color: white;
 }
 
-/* HEADER */
 header {
     background-color: transparent;
     text-align: center;
     padding: 60px 20px;
 }
 
-/* NAVIGATION */
 ul.navigation {
     display: flex;
     justify-content: left;
@@ -29,7 +26,7 @@ ul.navigation li a {
     color: white;
     padding: 10px 15px;
     text-decoration: none;
-    background: #334155;
+    background: #525533;
     border-radius: 8px;
     transition: 0.3s;
 }
@@ -91,7 +88,6 @@ ul.navigation li a:hover {
 .list tr:hover {
     background-color: #3b82f6;
 }
-
 
 .fade-section {
     opacity: 0;
